@@ -67,11 +67,17 @@
 
         // 组合式 APi 入口
         setup() {
+
             const info = ref('');
             // 创建路由
             const route = useRoute();
+            // 新增响应式对象
+            const kwargs = ref({page: 0, searchText: ''});
+            // 修改方法，把此对象作为第三个参数
             // 获取文章列表数据的方法
-            getArticleData(info, route);
+            getArticleData(info, route, kwargs);
+
+
 
             const {
                 is_page_exists,
