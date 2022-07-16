@@ -20,8 +20,7 @@
                         v-bind:key="tag" 
                         class="tag"
                     >
-                        {{ article.url }}
-                        {{imageIfExists(article)}}
+                        {{ tag }}
                     </span>
                 </div>
                 <div class="a-title-container">
