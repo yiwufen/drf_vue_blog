@@ -13,6 +13,7 @@ export default function articleGrid() {
 
 function _imageIfExists(article) {
     if (article.avatar) {
+        console.log(article.avatar.content);
         return article.avatar.content
     }
 }
