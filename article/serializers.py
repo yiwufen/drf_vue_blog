@@ -33,6 +33,7 @@ from comment.serializers import CommentSerializer
 #         fields = '__all__'
 
 class AvatarSerializer(serializers.ModelSerializer):
+
     url = serializers.HyperlinkedIdentityField(view_name='avatar-detail')
 
     class Meta:
