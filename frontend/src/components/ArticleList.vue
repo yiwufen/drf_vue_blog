@@ -202,12 +202,12 @@
         //     //     return url
         //     // }
         // },
-        watch: {
-            // 监听路由是否有变化
-            $route() {
-                this.get_article_data()
-            }
-        }
+        // watch: {
+        //     // 监听路由是否有变化
+        //     $route() {
+        //         this.get_article_data()
+        //     }
+        // }
     }
 
 </script>
